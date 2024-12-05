@@ -1,7 +1,9 @@
 //🟢Setup Procedure - Runs Once to Set The Canvas
 void setup() {
     size(400, 400); 
-    background(255,255,255,100);
+    background(25,251,255,100);
+    
+   
 }
 
 
@@ -13,15 +15,28 @@ void draw(){
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
   
   // The ground
+  fill(198, 227, 225 )
   rect(0, 300, 400, 100);  
 
   // The sun
-  ellipse(80, 64, 100, 100);  
+fill(25, 138, 128 )
+ellipse(80, 64, 100, 100);  
 
   // The snowman
+  fill(217, 246, 243)
   ellipse(200, 300, 150, 150);
   ellipse(200, 200, 100, 100);
   ellipse(200, 120, 75, 75);
+  
+  //eyes 
+  fill(20, 21, 21)
+  ellipse(215, 115, 10, 10);
+  ellipse(185, 115, 10, 10);
+  
+  //arms
+  line(222,191,297,141)
+  line(179,191,91,145)
+  
   
 
 }
@@ -47,6 +62,7 @@ void mousePressed(){
 void keyPressed(){
   if(key == 'c' || key == 'C'){
     background(255,255,255,100);
+
   }
 
   if(key == 'r' || key == 'R'){
